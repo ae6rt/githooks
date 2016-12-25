@@ -1,6 +1,6 @@
 # Git Hooks
 
-Git hooks allow you to process git metadata at various points in the commit cycle.  Reference:  https://git-scm.com/docs/githooks
+Git hooks allow you to process git metadata at various points in the commit cycle.  Reference:  [https://git-scm.com/docs/githooks](https://git-scm.com/docs/githooks).
 
 Configure a global git hooks directory
 
