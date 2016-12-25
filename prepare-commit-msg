@@ -8,7 +8,7 @@ trap 'rm -f ${MESSAGE_FILE}' EXIT
 
 readonly MESSAGE_SOURCE=${2:-none}
 readonly MESSAGE_FILE=$(mktemp /tmp/commit-message-XXXX)
-readonly ISSUE=$(git rev-parse --abbrev-ref HEAD | sed -e 's#.*/##g')
+readonly ISSUE=$(git rev-parse --abbrev-ref HEAD 2>/dev/null | sed -e 's#.*/##g')
 
 case ${MESSAGE_SOURCE} in
     commit|merge|squash|template)
