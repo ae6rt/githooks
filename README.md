@@ -1,4 +1,6 @@
-## Git Hooks
+# Git Hooks
+
+Git hooks allow you to process git metadata at various points in the commit cycle.  Reference:  https://git-scm.com/docs/githooks
 
 Configure a global git hooks directory
 
@@ -7,6 +9,8 @@ $ git config --global core.hookspath ~/lib/githooks/
 ```
 
 Make the hooks executable and place them in the hooks directory.
+
+## Client side hooks
 
 ### prepare-commit-msg
 
